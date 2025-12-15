@@ -9,6 +9,8 @@ Spatial Tab Manager is a Chrome Extension that reimagines the browser interface.
 
 This project addresses "Tab Overload" by utilizing spatial memory and force-directed graphs. It automatically links tabs based on browsing history (provenance), allows for semantic clustering into "Workspaces," and utilizes a high-performance D3.js simulation to make tab management fluid and intuitive.
 
+This repository contains a Vite + React demo for exploring spatial tab management concepts. The codebase is intentionally small and focused on the UI and interaction patterns (physics-driven layout, command palette, canvas navigation).
+
 ## ✨ Key Features
 
 - 🕸️ **Living Graph**: Tabs are treated as active nodes in a physics simulation.
@@ -70,15 +72,6 @@ The extension is now installed! Open a new tab to see the Spatial Tab Manager in
 | Peek Mode | Hold `Spacebar` (Zoom to fit) |
 | Command Palette | `Ctrl + K` (Windows/Linux) or `Cmd + K` (Mac) |
 | Undo Action | `Ctrl + Z` |
-# Spatial Tab Manager
-
-A small web project (Chrome extension-style UI demo) that demonstrates a graph-based approach to organizing and navigating browser tabs on a 2D canvas.
-
-![Project UI](public/Project_UI.png)
-
-## Overview
-
-This repository contains a Vite + React demo for exploring spatial tab management concepts. The codebase is intentionally small and focused on the UI and interaction patterns (physics-driven layout, command palette, canvas navigation).
 
 ## Project structure
 
@@ -106,30 +99,7 @@ This repository contains a Vite + React demo for exploring spatial tab managemen
 - The `SpatialCanvas.jsx` component encapsulates the visualization and the physics simulation (d3-force). It renders nodes and links to an SVG and exposes pan/zoom and keyboard shortcuts.
 - `utils.js` provides helpers (e.g., simple data transforms or persistence helpers).
 
-## Run locally
-
-1. Install dependencies
-
-```bash
-npm install
-```
-
-2. Run dev server
-
-```bash
-npm run dev
-```
-
-3. Build for production
-
-```bash
-npm run build
-```
 
 Notes:
 - The development server uses Vite — open the printed localhost URL to view the app.
 - If you plan to package this as a Chrome extension, build first and use the generated `dist` (or `build`) folder to `Load unpacked` in `chrome://extensions`.
-
-## Tests & linting
-
-This repository does not include automated tests by default. ESLint configuration is present — run your preferred lint command or add scripts to `package.json` as needed.
