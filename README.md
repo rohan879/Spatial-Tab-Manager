@@ -1,4 +1,3 @@
-```markdown
 # Spatial Tab Manager
 **A Graph-Based Approach to Web Browsing**
 
