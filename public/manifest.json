@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Spatial Tab Manager",
+  "version": "1.0",
+  "description": "A spatial, graph-based interface for managing browser tabs.",
+  "permissions": [
+    "tabs",
+    "sidePanel",
+    "bookmarks"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "action": {
+    "default_title": "Open Spatial Tabs"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}
