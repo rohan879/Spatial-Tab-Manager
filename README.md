@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 *```markdown
+=======
+>>>>>>> 0036cf524dbb97e9d4bc38be06abf5f362bac0ec
 # Spatial Tab Manager
 **A Graph-Based Approach to Web Browsing**
 
@@ -71,6 +74,7 @@ The extension is now installed! Open a new tab to see the Spatial Tab Manager in
 | Peek Mode | Hold `Spacebar` (Zoom to fit) |
 | Command Palette | `Ctrl + K` (Windows/Linux) or `Cmd + K` (Mac) |
 | Undo Action | `Ctrl + Z` |
+<<<<<<< HEAD
 # Spatial Tab Manager
 
 A small web project (Chrome extension-style UI demo) that demonstrates a graph-based approach to organizing and navigating browser tabs on a 2D canvas.
@@ -134,3 +138,12 @@ Notes:
 ## Tests & linting
 
 This repository does not include automated tests by default. ESLint configuration is present — run your preferred lint command or add scripts to `package.json` as needed.
+=======
+
+## 🏗️ Architecture
+
+The project uses a hybrid architecture to ensure performance even with 100+ active tabs.
+
+- **React Layer**: Handles UI state, search bars, menus, and browser API interactions.
+- **D3 Layer**: Bypasses React's virtual DOM for the physics simulation, rendering directly to an SVG canvas for maximum speed.
+>>>>>>> 0036cf524dbb97e9d4bc38be06abf5f362bac0ec
